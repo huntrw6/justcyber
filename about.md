@@ -1,2 +1,1 @@
-title: About
-permalink: /about
+
