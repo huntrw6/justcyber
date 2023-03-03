@@ -1,9 +1,9 @@
 **Hello!**
 
-### Small image
+### image 1
 
-![Test1](./blob/main/F1Test.jpg)
+![Test1](https://github.com/huntrw6/justcyber/blob/main/F1Test.jpg)
 
-### Large image
+### image 2
 
 ![Testing](./blob/main/F1Test.jpg)
