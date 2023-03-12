@@ -38,7 +38,7 @@ except Exception:
 	print('Error caught : ', Exception.__name__)
 try:
     # take path of image as a input
-    path = input(r'Enter path of Image : ')
+    path = r'C:\Users\rudyr\OneDrive\Pictures\F1Test.jpg'
      
     # taking decryption key as input
     key = int(input('Enter Key for encryption of Image : '))
