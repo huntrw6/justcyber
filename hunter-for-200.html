@@ -83,18 +83,13 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 
             <div class="login">
               <!--Credit to Tyler Fry for the login design CSS code and inspiration-->
-              <h1>Sign In</h1>
+              <h1>Authentication Required</h1>
                 <form method="post">
                   <input type="text" name="u" placeholder="Username" required="required" />
                     <input type="password" name="p" placeholder="Password" required="required" />
-                    <button onclick="myFunction()">Login</button>
-                    <p color="FF0000" id="unauth"></p>
+                    <button type="submit" class="btn btn-primary btn-block btn-large" onclick="myFunction()">Login</button>
+                    <p color="FF0000">The username/password is incorrect.</p>
                     
-                    <script>
-                      function popUp() {
-                        document.getElementById("unauth").innerHTML = "The username/password is incorrect";
-                      }
-                    </script>
                 </form>
             </div>
           </div>
