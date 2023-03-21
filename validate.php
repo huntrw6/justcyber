@@ -1,6 +1,6 @@
 <?php
 // Check if flag is valid
-$flag = $_POST['flag'];
+$flag = ($_POST['flag']);
 
 if ($flag === 'NOAH DID EVERYTHING JUST AS GOD COMMANDED HIM. GENESIS') {
   $result = array('valid' => true);
