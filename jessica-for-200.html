@@ -58,12 +58,18 @@
           <p>Hint: Noah's Ark </p>
           
   <form action="validate.php" method="post">
-  <label for="flag"> </label>
+  <label for="flag">Flag </label>
   <input type="text" id="flag" name="flag" required>
   <button type="submit">Submit Flag</button>
   <p id="result"></p>
 </form>
 
+<?php
+// Debugging statement to check if the script is receiving the data
+echo "Received flag: " . $_POST['flag'];
+
+// Rest of the code
+?>
        
   <a href="validate.php">Link text</a>
      
