@@ -14,7 +14,7 @@ body {
     font-size: 18px;
     background: url(./bible-background-aaron-burden.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom 75%;
 }
 
 .container {
