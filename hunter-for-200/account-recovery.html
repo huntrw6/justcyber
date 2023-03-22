@@ -46,6 +46,10 @@
 
     </form>
     <div class="container">
+
+        <p>Your grade is: <span id="grade">__</span></p>
+        <p id="grade2"></p>
+
         <script>
             document.getElementById("form1").onsubmit=function() {
             variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
@@ -75,7 +79,7 @@
 
             document.getElementById("grade2").innerHTML = result2;
 
-        return false; // stops a page refresh
+            return false; // stops a page refresh
         }
 
         </script>
