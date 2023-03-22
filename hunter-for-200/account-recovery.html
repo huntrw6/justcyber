@@ -42,31 +42,33 @@
             
             <button class="form__button" type="submit" value="Submit">Continue</button>
 
-            <script>
-                document.getElementById("securityquestions").onsubmit=function() {
-                       variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
-                       sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
-                       con = parseInt(document.querySelector('input[name = "con"]:checked').value);
-                       ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
-                
-                
-                       result = variable + sub + con + ifstate;
-                
-                    document.getElementById("grade").innerHTML = result;
-
-                    if (result == 0) {result2 = "I don't think you studied."};
-                    if (result == 100) {result2 = "Excellent! You're a JavaScript pro!"};
-                    document.getElementById("grade2").innerHTML = result2;
-                
-                    return false; // don't refresh the page
-                }
-                
-                </script>
+            
 
             <p class="form__text">
                 <a class="form__link" href="./hunter-for-200">Sign in</a>
             </p>
         </form>
+
+        <script>
+            document.getElementById("securityquestions").onsubmit=function() {
+                variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+                sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+                con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+                ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+            
+            
+                result = variable + sub + con + ifstate;
+            
+                document.getElementById("grade").innerHTML = result;
+
+                if (result == 0) {result2 = "I don't think you studied."};
+                if (result == 100) {result2 = "Excellent! You're a JavaScript pro!"};
+                document.getElementById("grade2").innerHTML = result2;
+            
+                return false; // don't refresh the page
+            }
+            
+        </script>
 
         <form class="form form--hidden" id="createAccount">
             <h1 class="form__title">Create Account</h1>
