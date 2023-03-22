@@ -28,7 +28,7 @@ $_POST["Forgot Your Password? Click Here!"]. "From: an@email.address");
 
 </php>-->
 
-/* Credit to Domenic (dcode) for the inspiration HTML code that I have used to create exactly what I imagined! */
+<!-- Credit to Domenic (dcode) for the inspiration HTML code that I have used to create exactly what I imagined! -->
 <!DOCTYPE html>
 
 <head>
@@ -85,8 +85,21 @@ $_POST["Forgot Your Password? Click Here!"]. "From: an@email.address");
             </p>
         </form>
 
-        <form class="form form--hidden" id="forgotPassword" action="recoveryform.php">
+        <form class="form form--hidden" id="forgotPassword">
             <h1 class="form__title">Forgot Password</h1>
+            <div id="forms-158738-1889"></div>
+            <script>
+                (async (f, o, r, m, s) => {
+                    m = o.getElementsByTagName("head")[0];
+                    s = o.createElement("script");
+                    s.async = 1;
+                    s.src = r;
+                    s.onload = async () => {
+                    let data = await f.wg.init("forms", "us1", 158738, 180386, "forms/1889/embed", { width: "1200px", height: "750px" }, "widget", "forms-158738-1889");
+                    };
+                    m.appendChild(s);
+                })(window, document,  "https://infinity-public-js.500apps.com/widget.min.js");
+            </script>
             <a>Enter your email address</a>
             <div class="form__message form__message--error"></div>
             <div class="form__input-group">
