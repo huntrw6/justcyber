@@ -1,4 +1,36 @@
+<?php
+
+
+if($_POST["message"]) {
+
+
+mail("hunter.wegner6@gmail.com", "BibleHub Password Recovery",
+
+
+$_POST["Forgot Your Password? Click Here!"]. "From: an@email.address");
+
+
+}
+
+
+?>
+<!--<php>
+    if($_POST["message"]) {
+
+
+        mail("hunter.wegner6@gmail.com", "BibleHub Password Recovery",
+        
+        
+        $_POST["Forgot Your Password? Click Here!"]. "From: an@email.address");
+        
+        
+        }
+
+</php>-->
+
+/* Credit to Domenic (dcode) for the inspiration HTML code that I have used to create exactly what I imagined! */
 <!DOCTYPE html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -53,7 +85,7 @@
             </p>
         </form>
 
-        <form class="form form--hidden" id="forgotPassword">
+        <form class="form form--hidden" id="forgotPassword" action="recoveryform.php">
             <h1 class="form__title">Forgot Password</h1>
             <a>Enter your email address</a>
             <div class="form__message form__message--error"></div>
