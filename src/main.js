@@ -1,3 +1,4 @@
+/* Credit to Domenic (dcode) for the inspiration JS code that I have used to create exactly what I imagined! */
 function setFormMessage(formElement, type, message) {
     const messageElement = formElement.querySelector(".form__message");
 
