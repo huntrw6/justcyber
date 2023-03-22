@@ -9,12 +9,12 @@
         label {
             display: block;
         }
-        
+
     </style>
 </head>
 <body>
     <div class="container">
-        <form class="form" id="login">
+        <form class="form" id="securityquestions">
             <h3>Where was the most famous man in history born?</h1>
 
             <label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />Egjypt</label>
@@ -43,7 +43,7 @@
             <button class="form__button" type="submit" value="Submit">Continue</button>
 
             <script>
-                document.getElementById("form1").onsubmit=function() {
+                document.getElementById("securityquestions").onsubmit=function() {
                        variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
                        sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
                        con = parseInt(document.querySelector('input[name = "con"]:checked').value);
