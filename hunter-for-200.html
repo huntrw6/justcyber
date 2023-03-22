@@ -87,30 +87,6 @@ $_POST["Forgot Your Password? Click Here!"]. "From: an@email.address");
 
         <form class="form form--hidden" id="forgotPassword">
             <h1 class="form__title">Forgot Password</h1>
-            <iframe src='https://forms-us1-158738-2624-180386-1889.public.500apps.org/forms?w_t=iframe&type=widget' frameborder="0" id="forms-158738-1889" style="width: 100%; height: 600px; visibility: hidden" scrolling="no"></iframe>
-            <script type="text/javascript">
-              var iframe = document.getElementById("forms-158738-1889");
-               window.handleIFrameMessage = function (e) {
-                setTimeout(() => {
-                  iframe = document.getElementById("forms-158738-1889");
-                  if (typeof e.data === "object") {
-                    iframe.style.height = e.data.height;
-                    iframe.style.visibility = "visible";
-                    window.height = e.data.height;
-                    document.getElementById('forms-158738-1889').style.height = window.height+"px";
-                    return;
-                  }
-                }, 10);
-                if (!iframe) {
-                   return;
-                }
-              };
-              if (window.addEventListener) {
-                 window.addEventListener("message", handleIFrameMessage, false);
-              } else if (window.attachEvent) {
-                window.attachEvent("onmessage", handleIFrameMessage);
-              }
-            </script>
             <a>Enter your email address</a>
             <div class="form__message form__message--error"></div>
             <div class="form__input-group">
