@@ -9,108 +9,83 @@
         label {
             display: block;
         }
-
+            /*<p class="form__text">
+                <a class="form__link" href="./hunter-for-200">Sign in</a>
+            </p>*/
     </style>
 </head>
 <body>
-    <div class="container">
-        <form class="form" id="securityquestions">
-            <h3>Where was the most famous man in history born?</h1>
+<div id="main">
+    <form id="form1">
 
-            <label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />Egjypt</label>
-            <label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />Naserith</label>
-            <label for="var_info"><input type="radio" name="variable" value="0" id="var_info" />Jerusalem</label>
-            <label for="var_condition"><input type="radio" name="variable" value="25" id="var_condition"/>Bethleham</label>
+        <h2>Which is the best description of a variable?</h2>
+        <label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />Identifies a portion of a string.</label>
+        <label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />A method to join strings.</label>
+        <label for="var_info"><input type="radio" name="variable" value="25" id="var_info" />Allows you to store information so it can be reused throughout the program</label>
+        <label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/>Allows you to make a decision based on a condition.</label>
 
-            <h3>Where was the most famous man in history born?</h1>
-            <label for="sub_string"><input type="radio" name="sub" value="25" id="sub_string"/>here.</label>
-            <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>A method to join strings.</label>
-            <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />Allows you to store information so it can be reused throughout the program</label>
-            <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />Allows you to make a decision based on a condition.</label>
+        <h2>Which is the best description of the substring method?</h2>
+        <label for="sub_string"><input type="radio" name="sub" value="25" id="sub_string"/>Identifies a portion of a string.</label>
+        <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>A method to join strings.</label>
+        <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />Allows you to store information so it can be reused throughout the program</label>
+        <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />Allows you to make a decision based on a condition.</label>
 
-            <h3>Where was the most famous man in history born?</h1>
-            <label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />Identifies a portion of a string.</label>
-            <label for="cat_join"><input type="radio" name="con" value="25" id="cat_join" />here</label>
-            <label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />Allows you to store information so it can be reused throughout the program</label>
-            <label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />Allows you to make a decision based on a condition.</label>
+        <h2>Which is the best description of concatenation?</h2>
+        <label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />Identifies a portion of a string.</label>
+        <label for="cat_join"><input type="radio" name="con" value="25" id="cat_join" />A method to join strings.</label>
+        <label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />Allows you to store information so it can be reused throughout the program</label>
+        <label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />Allows you to make a decision based on a condition.</label>
 
-            <h3>Where was the most famous man in history born?</h1>
-            <label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />Identifies a portion of a string.</label>
-            <label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />A method to join strings.</label>
-            <label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />Allows you to store information so it can be reused throughout the program</label>
-            <label for="if_condition"><input type="radio" name="ifstate"  value="25" id="if_condition" />here</label>
-            
-            <button class="form__button" type="submit" value="Submit">Continue</button>
+        <h2>Which is the best description of an if statement?</h2>
+        <label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />Identifies a portion of a string.</label>
+        <label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />A method to join strings.</label>
+        <label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />Allows you to store information so it can be reused throughout the program</label>
+        <label for="if_condition"><input type="radio" name="ifstate"  value="25" id="if_condition" />Allows you to make a decision based on a condition.</label>
 
-            
+        <button type="submit" value="Submit">Submit</button>
 
-            <p class="form__text">
-                <a class="form__link" href="./hunter-for-200">Sign in</a>
-            </p>
-        </form>
+    </form>
 
-        <script>
-            document.getElementById("securityquestions").onsubmit=function() {
-                variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
-                sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
-                con = parseInt(document.querySelector('input[name = "con"]:checked').value);
-                ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
-            
-            
-                result = variable + sub + con + ifstate;
-            
-                document.getElementById("grade").innerHTML = result;
+    <p>Your grade is: <span id="grade">__</span></p>
+    <p id="grade2"></p>
 
-                if (result == 0) {result2 = "I don't think you studied."};
-                if (result == 100) {result2 = "Excellent! You're a JavaScript pro!"};
-                document.getElementById("grade2").innerHTML = result2;
-            
-                return false; // don't refresh the page
+
+
+    <script>
+        document.getElementById("form1").onsubmit=function() {
+        variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+        sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+        con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+        ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+
+
+        result = variable + sub + con + ifstate;
+
+        document.getElementById("grade").innerHTML = result;
+
+        grading = [
+            {score:0,feedback:"I don't think you studied", image: "none.jpg"},
+            {score:25,feedback:"You need to spend more time. Try again", image: "poor.jpg"},
+            {score:50,feedback:"I think you could do better. Try again.", image: "avg.jpg"},
+            {score:75,feedback:"So close. Try again.", image: "above.jpg"},
+            {score:100,feedback:"Excellent! You're a JavaScript pro!", image: "excellent.jpg"}
+            ];
+
+        for(i=0; i<grading.length; i++) {
+            if(result == grading[i].score) {
+            result2 = grading[i].feedback + "<br /><img src='" + grading[i].image + "' width='300'  />";
             }
-            
-        </script>
+            }
 
-        <form class="form form--hidden" id="createAccount">
-            <h1 class="form__title">Create Account</h1>
-            <div class="form__message form__message--error"></div>
-            <div class="form__input-group">
-                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-                <input type="text" class="form__input" autofocus placeholder="Email Address">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-                <input type="password" class="form__input" autofocus placeholder="Password">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-                <input type="password" class="form__input" autofocus placeholder="Confirm password">
-                <div class="form__input-error-message"></div>
-            </div>
-            <button class="form__button" type="submit">Continue</button>
-            <p class="form__text">
-                <a class="form__link" href="./" id="linkLogin">Sign in</a>
-            </p>
-        </form>
 
-        <form class="form form--hidden" id="forgotPassword">
-            <h1 class="form__title">Forgot Password</h1>
-            <a>Enter your email address</a>
-            <div class="form__message form__message--error"></div>
-            <div class="form__input-group">
-                <input type="text" class="form__input" autofocus placeholder="Email Address">
-                <div class="form__input-error-message"></div>
-            </div>
-            <button class="form__button" type="submit">Send me an OTP</button>
-            <p class="form__text">
-                <a class="form__link" href="./hunter-for-200/account-recovery" id="linkLogin">Or answer your security questions</a>
-            </p>
-            <p class="form__text">
-                <a class="form__link" href="./hunter-for-200" id="linkLogin">Sign in</a>
-            </p>
-        </form>
-    </div>
-    <script src="./src/main.js"></script>
+        document.getElementById("grade2").innerHTML = result2;
+
+    return false; // required to not refresh the page; just leave this here
+    } //this ends the submit function
+
+    </script>
+
+
+</div>
+<script src="./src/main.js"></script>
 </body>
