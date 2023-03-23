@@ -1,235 +1,113 @@
 <!DOCTYPE html>
-
 <html>
-
-<!--credit for the below CSS goes to rajeshdn @RajRajeshDn-->
-    <style>
-
-   *{ 
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	list-style: none;
-	text-decoration: none;
-	outline: none;
-	font-family: 'Open Sans', sans-serif;
-   }-->
-
-body{
-	font-size: 14px;
-	background-color: #f9f9f9;
-}
-
-a{
-    color: #0366d6;
-}
-
-.wrapper{
-	max-width: 310px;
-	width: 100%;
-	height: auto;
-	margin: 40px auto;
-}
-
-.wrapper .logo img{
-	display: block;
-	width: 48px;
-	height: 48px;
-	margin: 0 auto 25px;
-}
-
-.wrapper .title p{
-	margin-bottom: 15px;
-	font-size: 24px;
-	text-align: center;
-	color: #333;
-}
-
-.wrapper .form{
-	margin-bottom: 15px;
-	background-color: #fff;
-    border: 1px solid #d8dee2;
-    border-radius: 5px;
-    padding: 20px;
-}
-
-.wrapper .form .input_field{
-	margin-bottom: 15px;
-	position: relative;
-}
-
-.wrapper .form .input_field label{
-	display: block;
-	font-weight: 600;
-	margin-bottom: 7px;
-	color: #24292e;
-}
-
-.wrapper .form .input_field .input{
-	width: 100%;
-	background: #fff;
-    border: 1px solid #d1d5da;
-    box-shadow: inset 0 1px 2px rgba(27,31,35,.075);
-    border-radius: 3px;
-    color: #24292e;
-    font-size: 16px;
-    line-height: 20px;
-    min-height: 34px;
-    padding: 6px 8px;
-}
-
-.wrapper .form .input_field a.forgot{
-	position: absolute;
-	top:  0;
-	right: 0;
-	font-size: 12px;
-	color: #0366d6;
-}
-
-.wrapper .form .input_field .input:focus{
-	border-color: #2188ff;
-    box-shadow: inset 0 1px 2px rgba(27,31,35,.075), 0 0 0 2.5px rgba(3,102,214,.3);
-}
-
-.wrapper .form .sign_btn{
-	margin-top: 20px;
-	background-color: #28a745;
-	border: 1px solid rgba(27,31,35,.2);
-	width: 100%;
-	color: #fff;
-	font-weight: 600;
-	cursor: pointer;
-	padding: 6px 12px;
-	border-radius: 2px;
-}
-
-.wrapper .form .sign_btn:hover{
-	background-color: #279f43;
-}
-
-.wrapper .create_act{
-	border: 1px solid #d8dee2;
-    border-radius: 5px;
-    padding: 15px 20px;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.wrapper .create_act a:hover{
-	text-decoration: underline;
-}
-
-.wrapper .footer{
-	padding: 40px 0;
-	text-align: center;
-}
-
-.wrapper .footer ul li{
-	display: inline-block;
-}
-
-wrapper .footer ul li:last-child a{
-	color: #586069;
-}
-</style>
-
-
-
-
-
-
-
-
-<div class="wrapper">
-	<div class="logo">
-		<!--img src="https://i.imgur.com/gr4XvFZ.png" alt="GitHub"-->
-	</div>
-	<div class="title">
-		<p>Sign in if your a Member!!!</p>
-	</div>
-	<div class="form">
-		<div class="input_field">
-			<label>Username</label>
-			<input type="text" class="input">
-		</div>
-		<div class="input_field">
-			<label>Password</label>
-			<input type="password" class="input">
-			<a href="#" class="forgot">Hint?</a>
-		</div>
-		<div class="btn">
-			<input type="submit" value="Sign in" class="sign_btn">
-		</div>
-	
-	</div>
-	
-	</div> 
-</div>	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--CREATE TABLE emp_master
-
-(emp_id INTEGER PRIMARY KEY AUTOINCREMENT,
-
-first_name TEXT,
-
-last_name TEXT,
-
-salary NUMERIC,
-
-dept_id INTEGER);
-
- 
-
-INSERT INTO emp_master
-
-values (2,'Shweta','Jariwala', 19300,2),
-
-(3,'Vinay','Jariwala', 35100,3),
-
-(4,'Jagruti','Viras', 9500,2),
-
-(5,'Shweta','Rana',12000,3),
-
-(6,'sonal','Menpara', 13000,1),
-
-(7,'Yamini','Patel', 10000,2),
-
-(8,'Khyati','Shah', 500000,3),
-
-(9,'Shwets','Jariwala',19400,2),
-
-(12,'Sonal','Menpara', 20000,4);-->
+  <head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Registration Form</h1>
+          </div>
+          <div class="panel-body">
+            <form action="connect.php" method="post">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number"
+                  name="number"
+                />
+              </div>
+              <input type="submit" class="btn btn-primary" />
+            </form>
+          </div>
+          <div class="panel-footer text-right">
+            <small>&copy; Technical Babaji</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <img src="..." class="rounded mr-2" alt="...">
+    <strong class="mr-auto">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+  </div>
+</div>
+  </body>
+</html>
