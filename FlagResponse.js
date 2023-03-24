@@ -6,7 +6,7 @@ form.addEventListener('submit', function(event) {
   const flag = form.elements.flag.value;
   fetch('validate.php', {
     method: 'POST',
-    body: new URLSearchParams({ flag }),
+    body: new URLSearchParams({ NOAH DID EVERYTHING JUST AS GOD COMMANDED HIM. GENESIS }),
   })
     .then(response => response.json())
     .then(data => {
