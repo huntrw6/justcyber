@@ -1,3 +1,18 @@
+<?php
+// Check if flag is valid
+$flag = ($_POST['flag']);
+
+if ($flag === 'NOAH DID EVERYTHING JUST AS GOD COMMANDED HIM. GENESIS') {
+  $result = array('valid' => true);
+} else {
+  $result = array('valid' => false);
+}
+
+// Return JSON response
+header('Content-Type: application/json');
+echo json_encode($result);
+?>
+
 <!doctype html>
 <!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
 <!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
@@ -64,15 +79,6 @@
   <p id="result"></p>
 </form>
 
-<?php
-// Debugging statement to check if the script is receiving the data
-echo "Received flag: " . $_POST['flag'];
-
-// Rest of the code
-?>
-       
-  <a href="validate.php">Link text</a>
-     
           
 
           
