@@ -37,6 +37,7 @@ body {
 
 .form--hidden {
     display: none;
+    width: 800px;
 }
 
 .form > *:first-child {
