@@ -99,6 +99,7 @@ body {
 .form__input--error {
     color: var(--color-error);
     border-color: var(--color-error);
+    cursor: pointer;
 }
 
 .form__input-error-message {
