@@ -95,6 +95,7 @@ body {
     margin-top: 0.5rem;
     font-size: 0.85rem;
     color: var(--color-error);
+    cursor: pointer;
 }
 
 .form__button {
