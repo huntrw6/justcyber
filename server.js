@@ -5,7 +5,7 @@ const app = express();
 
 var db;
     //username = dbuser
-    //password = 
+    //password = testing5627
 
 MongoClient.connect('mongodb+srv://cluster0.ggflvpu.mongodb.net/cluster0" --apiVersion 1 --username dbuser', function (err, database) {
     if(err) return console.log(err);
