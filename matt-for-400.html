@@ -14,11 +14,32 @@
                 'You will be ever hearing but never understanding; you will be ever seeing but never perceiving.</p>
                 
 
-                <form method="post" action="response.php">
-                        <label for="search">Search:</label>
-                        <input type="text" id="search" name="search">
-                        <button type="submit">Submit</button>
-                      </form>
+               
+                <script src="backend.js"></script>
+             
+              
+                <input type="text" id="search" placeholder="Search...">
+                <button id="searchButton">Search</button>
+              
+                <div id="searchResults"></div>
+              
+                <script>
+                  const searchButton = document.getElementById("searchButton");
+                  const searchResults = document.getElementById("searchResults");
+              
+                  searchButton.addEventListener("click", function() {
+                    const searchQuery = document.getElementById("search").value;
+              
+                    if (searchQuery === "") {
+                      searchResults.innerHTML = "<p>Please enter a search query.</p>";
+                    } else {
+                      searchResults.innerHTML = "<p>Searching for: " + searchQuery + "</p>";
+                      processSearchQuery(searchQuery); // Call the processSearchQuery function from backend.js
+                    }
+                  });
+                </script>
+              
+             
 
         <!--form action="/todo" method="POST">
           <input type="text" placeholder="todo" name="name">
