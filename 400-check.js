@@ -1,18 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function sendMessage() 
 
 const grade = 90;
 
