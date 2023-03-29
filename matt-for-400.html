@@ -15,43 +15,21 @@
                 
 
                
-                <form id="search-form">
+                <!--form id="search-form">
                         <label for="search-query">Search:</label>
                         <input type="text" id="search-query" name="search-query">
                         <button type="submit" id="search-button">Search</button>
-                </form>
+                </form-->
                 <div id="search-results"></div>
              
-                <script>
-                //Add event listener to form submit
-                document.getElementById("search-form").addEventListener("submit", function(event) {
-                        event.preventDefault(); // Prevent page reload on form submission
-                        // Get search query from input field
-                        var searchQuery = document.getElementById("search-query").value;
-                        // Send search query to backend API using AJAX
-                        var xhr = new XMLHttpRequest();
-                        xhr.onreadystatechange = function() {
-                                if (xhr.readyState === XMLHttpRequest.DONE) {
-                                        if (xhr.status === 200) {
-                                                // Display search results
-                                                document.getElementById("search-results").innerHTML = xhr.responseText;
-                                        } else {
-                                                // Display error message
-                                                document.getElementById("search-results").innerHTML = "Error: " + xhr.status;
-                                        }
-                                }
-                        };
-                        xhr.open("GET", "/search?q=" + searchQuery, true);
-                        xhr.send();
-                });
-                </script>
-              
+                <form onsubmit="sendMessage(); return false">
+                        <input type="text" id="userInput"/>
+                    </form>
+
+                <script src="400-check.js"></script>
              
 
-        <!--form action="/todo" method="POST">
-          <input type="text" placeholder="todo" name="name">
-          <input type="text" placeholder="priority" name="priority">
-          <button type="submit">submit</button-->
+        
 
 
 
