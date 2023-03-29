@@ -33,18 +33,13 @@
         <label for="cat_info"><input type="radio" name="con" value="25" id="cat_info" />13</label>
         <label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />7</label>
 
-        <h2>Who is Eve's first born son?</h2>
-        <label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />Seth</label>
-        <label for="if_join"><input type="radio" name="ifstate" value="25" id="if_join" />Cain</label>
-        <label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />Adam</label>
-        <label for="if_condition"><input type="radio" name="ifstate"  value="0" id="if_condition" />Abel</label>
-
         <h2>&nbsp;</h2>
         <button class="form__button" type="submit" value="Submit">Submit</button>
 
     </form>
     <div class="containertwo">
 
+        <h2>&nbsp;</h2>
         <p class="form__text">
             <a class="form__link" href="https://huntrw6.github.io/justcyber/hunter-for-400">Sign in</a>
         </p>
@@ -57,15 +52,14 @@
             variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
             sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
             con = parseInt(document.querySelector('input[name = "con"]:checked').value);
-            ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
 
 
-            result = variable + sub + con + ifstate;
+            result = variable + sub + con;
 
             document.getElementById("grade").innerHTML = result;
 
             grading = [
-                {score:100,feedback:'flag: {Your password is: "theKingsGambit"}'}
+                {score:75,feedback:'flag: {Your password is: "theKingsGambit"}'}
                 ];
 
             for(i=0; i<grading.length; i++) {
