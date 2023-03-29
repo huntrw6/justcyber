@@ -1,26 +1,4 @@
 
-function processSearchQuery(query) {
-  if (query === "foo") {
-    // Do something if the search query is "foo"
-    console.log("Search query is foo");
-  } else if (query === "bar") {
-    // Do something if the search query is "bar"
-    console.log("Search query is bar");
-  } else {
-    // Do something if the search query is neither "foo" nor "bar"
-    console.log("Search query is neither foo nor bar");
-  }
-}
-searchButton.addEventListener("click", function() {
-  const searchQuery = document.getElementById("search").value;
-
-  if (searchQuery === "") {
-    searchResults.innerHTML = "<p>Please enter a search query.</p>";
-  } else {
-    searchResults.innerHTML = "<p>Searching for: " + searchQuery + "</p>";
-    processSearchQuery(searchQuery);
-  }
-});
 
 
 

@@ -15,7 +15,12 @@
                 
 
                
-                <script src="400-check.js"></script>
+                <form id="search-form">
+                        <label for="search-query">Search:</label>
+                        <input type="text" id="search-query" name="search-query">
+                        <button type="submit" id="search-button">Search</button>
+                </form>
+                <div id="search-results"></div>
              
                 <script>
                 //Add event listener to form submit
