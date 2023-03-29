@@ -1,4 +1,4 @@
-function sendMessage() 
+function sendMessage() {
 
 const grade = 90;
 
@@ -12,4 +12,4 @@ if (grade >= 90) {
   console.log("You got a D");
 } else {
   console.log("You failed the class");
-}
+}};
