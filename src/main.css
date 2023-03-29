@@ -73,6 +73,7 @@ body {
 
 .form__message--error {
     color: var(--color-error);
+    cursor: pointer;
 }
 
 .form__input-group {
@@ -141,5 +142,13 @@ body {
 }
 
 .form__link:hover {
+    text-decoration: underline;
+}
+
+.form__input--error:hover {
+    text-decoration: underline;
+}
+
+.form__input-error-message:hover {
     text-decoration: underline;
 }
