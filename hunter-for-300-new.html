@@ -1,6 +1,6 @@
-<a target="_blank" href="https://www.apronus.com/chess/puzzle/?p=0k6rXp2R4XP7X1R6X1N2pP2X1p2Pb2X4r3X5K2_w_-_-_0_1&N=0&w=&h=%3Ch3%3EStamma%20vs.%20Composition%3A%20White%20to%20play.%20Mate%20in%207.%3C%2Fh3%3E%3Ch5%3E%3C%2Fh5%3E&m=769"
+<!--<a target="_blank" href="https://www.apronus.com/chess/puzzle/?p=0k6rXp2R4XP7X1R6X1N2pP2X1p2Pb2X4r3X5K2_w_-_-_0_1&N=0&w=&h=%3Ch3%3EStamma%20vs.%20Composition%3A%20White%20to%20play.%20Mate%20in%207.%3C%2Fh3%3E%3Ch5%3E%3C%2Fh5%3E&m=769"
 >_____puzzle______</a>
-<!--
+
 
 [Event "Chessboard Editor at Apronus.com"]
 [Site "https://www.apronus.com/chess/puzzle/editor.php"]
@@ -13,3 +13,248 @@
 [FEN "k6r/p2R4/P7/1R6/1N2pP2/1p2Pb2/4r3/5K2 w - - 0 1"]
 
 -->
+
+
+
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90959-2', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+</script>
+
+<script src='https://www.apronus.com/chess/wizboard/wizboard-js.php'></script>
+
+<link rel="canonical" href="https://www.apronus.com/chess/puzzles/" />
+
+<title>Chess Puzzle - Apronus.com</title>
+<meta name="description" content="An interactive chess puzzle such that
+(1) the computer replies even if the user goes wrong,
+(2) the computer tries multiple defenses before admitting success,
+(3) the user is allowed a choice of alternative solutions.">
+
+<meta property="og:image" content="https://chessdiagram.online/ogram.php?d=______K______r____p__Pb___N__pP___R______P_______p__R____k______r&z=w&p=37&r=FFFFFF" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.apronus.com/chess/puzzle/?p=0k6rXp2R4XP7X1R6X1N2pP2X1p2Pb2X4r3X5K2_w_-_-_0_1&N=0&w=&h=%3Ch3%3EStamma%20vs.%20Composition%3A%20White%20to%20play.%20Mate%20in%207.%3C%2Fh3%3E%3Ch5%3E%3C%2Fh5%3E&m=769" />
+<meta property="og:title" content="Stamma vs. Composition: White to play. Mate in 7." />
+<meta property="og:description" content="You can switch the side you play at any moment. You can force the computer to make a move at any time." />
+<meta property="og:image:alt" content="diagram of the initial position for this chess puzzle" />
+
+<script>
+function gasendevent(action,label) { return "ga('send', 'event', '" + 'Wizboard' + "', '" + action + "', '" + label + "');"; }
+function evallog(gastring) { eval(gastring); console.log(gastring); }
+function galog(action,label) { evallog(gasendevent(action,label)); }
+function threshold(n) { var log8ile = Math.log(n)/Math.log(8); return (log8ile == Math.floor(log8ile)); }
+</script>
+
+<script>
+function el(id) { return document.getElementById(id); }
+function inIframe () { try { return window.self !== window.top; } catch (e) { return true; } }
+var iframejest = inIframe();
+//if (iframejest) { (new Image()).src = 'https://www.apronus.com/chess/stat/stat-iframe.php?' + document.referrer; }
+function puzzlelinklog()
+{
+	var query = new URLSearchParams(location.search);
+	var solution = query.has('w') && query.get('w').length;
+	var success = query.has('su');
+	var puzzlejest = solution || success;
+	var category = 'Puzzle-Link';
+	var action = document.referrer; if (action == '') action = 'no-ref';
+	if (action.indexOf('https://www.apronus.com/chess/puzzle/editor.php')==0) return;
+	var label = location.search;
+	var value = (puzzlejest ? 1 : 0) + (iframejest ? 2 : 0);
+	var gastring = "ga('send', 'event', '" + category + "', '" + action + "', '" + label + "', '" + value + "');";
+	eval(gastring); //console.log(gastring);
+}
+function playlinklog()
+{
+	var query = new URLSearchParams(location.search);
+	var solution = query.has('w') && query.get('w').length;
+	var success = query.has('su');
+	var puzzlejest = solution || success;
+	var category = 'Playcomputer-Link';
+	var action = document.referrer; if (action == '') action = 'no-ref';
+	if (action.indexOf('https://www.apronus.com/chess/')==0) return;
+	var label = location.search;
+	var value = (puzzlejest ? 1 : 0) + (iframejest ? 2 : 0);
+	var gastring = "ga('send', 'event', '" + category + "', '" + action + "', '" + label + "', '" + value + "');";
+	eval(gastring); //console.log(gastring);
+}
+
+if (location.href.indexOf('https://www.apronus.com/chess/playcomputer/')==0) playlinklog(); else puzzlelinklog();
+</script>
+
+</head>
+ 
+<body>
+
+<nav id='nav'>
+<a href="https://www.apronus.com/">Apronus.com</a> > <a href='https://www.apronus.com/chess/'>Chess</a>
+> <a href='https://www.apronus.com/chess/puzzles/'>Puzzles</a>
+<!--<span id='puzzleditorlink'>&bull; <a target='_top' href='https://www.apronus.com/chess/puzzle/editor.php'>Chess Puzzle Editor</a></span>-->
+<!--<span id='courselink'>&bull; <a target='_top' href='https://szachydzieciom.pl/?lang=en' id='szachydzieciom'>Free Online Chess Course</a></span>-->
+<script> 
+var newwindow = '&nbsp; <button onclick="window.open(location.href);" title="fresh start in new window">New Window</button>';
+if (iframejest) document.write(newwindow);
+//el('szachydzieciom').addEventListener('click',function(e){galuj('Chess', 'democlick', 'puzzle-index');});
+</script>
+</nav>
+
+<script>
+function insertref(href)
+{
+	if (href.indexOf('https://szachydzieciom.pl/') != 0) return;
+	var a = newel('a');
+	a.href = href; a.style.display = 'block';
+	a.style.width = '286px'; a.style.height = '100px';
+	a.style.width = '143px'; a.style.height = '50px';
+	a.style.backgroundImage = 'url("szachydzieciom-minibanner.jpg")';
+	a.style.backgroundSize = 'contain';
+	a.style.float = 'right';
+	var span = newel('span'); //a.appendChild(span);
+	span.innerHTML = 'Free Chess Course';
+	span.style.backgroundColor = 'rgb(255,255,255,0.6)';
+	span.style.fontSize = ''; span.style.fontWeight = 'bold'; span.style.fontFamily = 'Arial';
+	a.style.textAlign = 'right';
+	span.style.outline = '0.3em solid rgb(255,255,255,0.6)';
+	el('nav').appendChild(a);
+	//el('puzzleditorlink').style.display = 'none';
+	//el('courselink').style.display = 'none';
+	el('nav').style.textAlign = 'left';
+	var x = newel('p'); x.innerHTML = 'click banner to see puzzle in free online course';
+	x.style.fontSize = '50%'; x.style.color = '#666'; x.style.margin = '2px';
+	el('nav').appendChild(x);
+	//el('nav').appendChild(document.createTextNode('click banner to see this puzzle in our free online course'));
+}
+</script>
+
+<script>
+document.body.style.margin = '0';
+document.body.style.padding = '0';
+document.body.style.fontFamily = 'Verdana';
+document.body.style.color = 'black';
+document.body.style.background = 'white';
+document.body.style.overflow = 'hidden';
+var nav = document.querySelector('nav');
+nav.style.lineHeight = '1.5';
+nav.style.margin = '0';
+nav.style.padding = '4px';
+nav.style.textAlign = 'left';
+nav.style.overflow = 'hidden';
+var nava = nav.querySelectorAll('a');
+for (var i=0; i < nava.length; i++)
+{
+	nava[i].style.whiteSpace = 'nowrap';
+	nava[i].target = '_top';
+}
+nav.style.fontSize = '100%';
+//nav.style.height = '24px';
+function adjust_nav_fontsize()
+{
+	var a = document.getElementById('nav');
+	if (a.scrollHeight <= a.clientHeight && a.scrollWidth <= a.clientWidth) return;
+	var fontsize = parseInt(a.style.fontSize);
+	a.style.fontSize = (fontsize-1) + '%';
+	setTimeout(adjust_nav_fontsize,1);
+}
+//setTimeout(adjust_nav_fontsize,0);	
+</script>
+
+<table id='tabla'><tr>
+<td id='iframetd'></td><td id='adtd'>
+<div id='addiv'></div></td>
+</tr></table>
+
+<script>
+function guess_gallery_width()
+{
+	if (window.innerWidth < 1000) return 0;
+ var overhead = 135;
+ var topp = 16, bottom = 16, left = 8, right = 0;
+ var PanelWidth = 19*16; // originally 19em
+ var gap = 16; // originally 1em, gap between chessboard and panel, between buttons and movelist
+ var w = (window.innerWidth - (left+right+1)) - PanelWidth - gap - 7; // last number is for good measure, it doesn't work without it
+ var h = window.innerHeight - overhead; //h -= computedmargin(el('h1header'));
+ var size = (w < h) ? w : h;
+ //size = resizeboard(size); // returns the computed size
+ var galw = w - size - 30; // originally gap was 30 here
+ return (galw > 121) ? galw : 121;
+}
+
+const galw = guess_gallery_width();
+const ad_bottom_margin = (galw === 0) ? 51 : 0;
+
+function sizetabla(galw)
+{
+	tabla.style.width = '100%';
+	tabla.style.padding = '0';
+	var height = (window.innerHeight - el('nav').clientHeight - 8 - ad_bottom_margin) + 'px'
+	tabla.style.height = height; iframetd.style.height = height; adtd.style.height = height; addiv.style.height = height;
+	iframetd.style.minWidth = (window.innerWidth - galw - 1) + 'px';
+	adtd.style.minWidth = galw + 'px';
+	adtd.style.background = '#fafafa';
+	adtd.style.padding = '0';
+	iframetd.style.padding = '0';
+	iframetd.style.verticalAlign = 'top';
+	addiv.style.width = galw + 'px';
+	adtd.style.overflow = 'hidden';
+	if (galw == 0) adtd.style.display = 'none';
+}
+
+sizetabla(galw);
+
+function resizeframka()
+{
+	var framka = el('framka');
+	var height = window.innerHeight;
+	var navheight = el('nav').clientHeight;
+	framka.style.height = (height - navheight - 8 - ad_bottom_margin) + 'px';
+	framka.style.resize = 'none';
+}
+
+
+var framka = newel('iframe'); framka.id = 'framka';
+iframetd.appendChild(framka); //document.body.appendChild(framka);
+framka.style.width = '100%';
+framka.style.margin = '0';
+framka.style.overflow = 'hidden';
+resizeframka();
+window.addEventListener("resize", resizeframka );
+
+var wizboardpath = 'https://www.apronus.com/chess/wizboard/';
+var puzzleset = null;
+var puzzle = location.search;
+puzzle = puzzle.replace('fen=','p=');
+initpuzzleiframe(framka,wizboardpath,puzzleset,puzzle);
+framka.style.resize = 'none';
+
+//el('puzzleditorlink').querySelector('a').href += puzzle;
+
+//setTimeout("framka.contentWindow.g_stateline_refresh();",1000); // supposed to fix this bug https://mail.google.com/mail/u/0/#all/QgrcJHsbgZLrqFtGWLBSLqNmkfccWqjHNkQ
+
+if (ad_bottom_margin > 0 || galw > 160)
+{
+	const div = newel('div');
+	div.id = 'bottomad';
+	div.style.height = (ad_bottom_margin > 0) ? '50px' : '0px';
+	div.style.overflow = 'hidden';
+	document.body.append(div);
+	setTimeout("insert_vdo_tag_bapronus(el('bottomad'));",10);
+}
+</script>
+
+</body> 
+</html>
