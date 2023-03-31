@@ -1,6 +1,6 @@
 function sendMessage() {
 
-    let filePath = "my-folder/Genesis/chapter1.txt";
+    let filePath = "my-folder/ /chapter1.txt";
 
     if (filePath.startsWith("my-folder/Genesis")) {
       console.log("This file is in the book of Genesis.");
