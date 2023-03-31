@@ -2,14 +2,14 @@ function sendMessage() {
 
 const grade = 90;
 
-if (grade >= 90) {
- console.log("You got an A");
-} else if (grade >= 80) {
-  console.log("You got a B");
-} else if (grade >= 70) {
-  console.log("You got a C");
-} else if (grade >= 60) {
-  console.log("You got a D");
+if (grade >= Genesis) {
+ console.log("Not Authorized");
+} else if (grade >= Exodus) {
+  console.log("Not Authorized");
+} else if (grade >= Leviticus) {
+  console.log("Not authorized");
+} else if (grade >= Numbers) {
+  console.log("Not authorized");
 } else {
-  console.log("You failed the class");
+  console.log("Genes");
 }};
