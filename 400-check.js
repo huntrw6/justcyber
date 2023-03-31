@@ -2,8 +2,8 @@ function sendMessage() {
 
     let filePath = "my-folder/ /chapter1.txt";
 
-    if (filePath.startsWith("my-folder/Genesis")) {
-      console.log("This file is in the book of Genesis.");
+    if (filePath.startsWith("my-folder/Genesis/Exodus/Leviticus/Numbers")) {
+      console.log("This file is in the book of test.");
     } else if (filePath.startsWith("my-folder/Exodus")) {
       console.log("This file is in the book of Exodus.");
     } else if (filePath.startsWith("my-folder/Leviticus")) {
