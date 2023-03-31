@@ -21,7 +21,7 @@ body {
 
 .container {
     width: 400px;
-    max-width: 800px;
+    max-width: 400px;
     margin: 1rem;
     padding: 2rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
@@ -73,6 +73,7 @@ body {
 
 .form__message--error {
     color: var(--color-error);
+    cursor: pointer;
 }
 
 .form__input-group {
@@ -143,3 +144,12 @@ body {
 .form__link:hover {
     text-decoration: underline;
 }
+
+.form__input--error:hover {
+    text-decoration: underline;
+}
+
+.form__input-error-message:hover {
+    text-decoration: underline;
+}
+
