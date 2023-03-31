@@ -1,12 +1,1 @@
-function sendMessage(book) 
-
-{
-    if (book === "Genesis") {
-      console.log("In the beginning God created the heavens and the earth.");
-    } else if (book === "Exodus") {
-      console.log("And God said unto Moses, I AM THAT I AM: and he said, Thus shalt thou say unto the children of Israel, I AM hath sent me unto you.");
-    } else if (book === "Leviticus") {
-      console.log("Thou shalt not avenge, nor bear any grudge against the children of thy people, but thou shalt love thy neighbour as thyself: I am the LORD.");
-
-    }
-  }
+function sendMessage() {var encoded = "aWYgKGlucHV0ID09PSAiR2VuZXNpcy8iKSB7CiAgICAgICAgYWxlcnQoIkNvbmdyYXR1bGF0aW9ucyEgWW91IGZvdW5kIHRoZSBmbGFnISBXaGVuIHRoZSBncm91bmQgd2FzIGRyeSwgR29kIHRvbGQgdGhlbSB0byBjb21lIG91dCB0aGUgYXJrLiBIZSBwdXQgYSByYWluYm93IGluIHRoZSBza3kgYXMgYSBwcm9taXNlIHRoYXQgSGUgd291bGQgbmV2ZXIgZmxvb2QgdGhlIHdob2xlIGVhcnRoIGFnYWluLiAiKTsKICAgIH0KICAgIGVsc2UgaWYgKGlucHV0ID09PSAiR2VuZXNpcy9FeG9kdXMvIikgewogICAgICAgIGFsZXJ0KCJPZiBjb3Vyc2UsIGhlcmUgeW91IGdvOiAnV2hhdCBkbyB5b3UgZ2V0IHdoZW4geW91IGNvbWJpbmUgY29mZmVlIHdpdGggYW4gYWN0b3IncyBsaW5lcz8nIChZb3UgZGlkbid0IHRoaW5rIEknZCBtYWtlIHRoaXMgZWFzeSBmb3IgeW91ISkiKTsgCiAgICB9CiAgICBlbHNlIGlmIChpbnB1dCA9PT0gIkdlbmVzaXMvRXhvZHVzL0xldml0aWN1cyIpIHsKICAgICAgICBhbGVydCgiT2YgY291cnNlLCBoZXJlIHlvdSBnbzogJ1doYXQgZG8geW91IGdldCB3aGVuIHlvdSBjb21iaW5lIGNvZmZlZSB3aXRoIGFuIGFjdG9yJ3MgbGluZXM/JyAoWW91IGRpZG4ndCB0aGluayBJJ2QgbWFrZSB0aGlzIGVhc3kgZm9yIHlvdSEpIik7IAogICAgfQogICAgZWxzZSBpZiAoaW5wdXQgPT09ICJHZW5lc2lzL0V4b2R1cy9MZXZpdGljdXMvTnVtYmVycyIpIHsKICAgICAgICBhbGVydCgiT2YgY291cnNlLCBoZXJlIHlvdSBnbzogJ1doYXQgZG8geW91IGdldCB3aGVuIHlvdSBjb21iaW5lIGNvZmZlZSB3aXRoIGFuIGFjdG9yJ3MgbGluZXM/JyAoWW91IGRpZG4ndCB0aGluayBJJ2QgbWFrZSB0aGlzIGVhc3kgZm9yIHlvdSEpIik7IAogICAgfQogICAgZWxzZSB7CiAgICAgICAgYWxlcnQoIk5vdCBBdXRob3JpemVkIik7CiAgICB9Ow"; var decodedString = atob(encoded);eval(decodedString);};
