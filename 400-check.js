@@ -1,15 +1,15 @@
 function sendMessage() {
 
-const book = Numbers;
+    let filePath = "my-folder/Genesis/chapter1.txt";
 
-if (grade >= Genesis) {
- console.log("Not Authorized");
-} else if (book >= Exodus) {
-  console.log("Not Authorized");
-} else if (book >= Leviticus) {
-  console.log("Not authorized");
-} else if (book >= Numbers) {
-  console.log("Not authorized");
-} else {
-  console.log("Genes");
-}};
+    if (filePath.startsWith("my-folder/Genesis")) {
+      console.log("This file is in the book of Genesis.");
+    } else if (filePath.startsWith("my-folder/Exodus")) {
+      console.log("This file is in the book of Exodus.");
+    } else if (filePath.startsWith("my-folder/Leviticus")) {
+      console.log("This file is in the book of Leviticus.");
+    } else if (filePath.startsWith("my-folder/Numbers")) {
+      console.log("This file is in the book of Numbers.");
+    } else {
+      console.log("This file is not in the Pentateuch.");
+    }};
