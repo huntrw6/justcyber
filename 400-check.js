@@ -1,14 +1,14 @@
 function sendMessage() {
 
-const grade = Numbers;
+const book = Numbers;
 
 if (grade >= Genesis) {
  console.log("Not Authorized");
-} else if (grade >= Exodus) {
+} else if (book >= Exodus) {
   console.log("Not Authorized");
-} else if (grade >= Leviticus) {
+} else if (book >= Leviticus) {
   console.log("Not authorized");
-} else if (grade >= Numbers) {
+} else if (book >= Numbers) {
   console.log("Not authorized");
 } else {
   console.log("Genes");
