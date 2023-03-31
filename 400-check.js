@@ -1,6 +1,6 @@
 function sendMessage() {
 
-    
+    let filePath = "/Bible/Old Testament/Genesis/Chapter 1.txt";
 
     
 
