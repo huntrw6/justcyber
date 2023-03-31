@@ -1,6 +1,6 @@
 function sendMessage() {
 
-const grade = 90;
+const grade = Numbers;
 
 if (grade >= Genesis) {
  console.log("Not Authorized");
