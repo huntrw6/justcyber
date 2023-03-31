@@ -1,15 +1,17 @@
 function sendMessage() {
 
-    let filePath = "my-folder";
+    let filePath = "/Bible/Old Testament/Genesis/Chapter 1.txt";
 
-    if (filePath.startsWith("my-folder/Genesis/Exodus/Leviticus/Numbers")) {
-      console.log("This file is in the book of test.");
-    } else if (filePath.startsWith("my-folder/Exodus")) {
-      console.log("This file is in the book of Exodus.");
-    } else if (filePath.startsWith("my-folder/Leviticus")) {
-      console.log("This file is in the book of Leviticus.");
-    } else if (filePath.startsWith("my-folder/Numbers")) {
-      console.log("This file is in the book of Numbers.");
+    
+
+    if (filePath.startsWith("/Bible/Old Testament/Genesis")) {
+      console.log("The file is in the Genesis directory.");
+    } else if (filePath.startsWith("/Bible/Old Testament/Exodus")) {
+      console.log("The file is in the Exodus directory.");
+    } else if (filePath.startsWith("/Bible/Old Testament/Leviticus")) {
+      console.log("The file is in the Leviticus directory.");
+    } else if (filePath.startsWith("/Bible/Old Testament/Numbers")) {
+      console.log("The file is in the Numbers directory.");
     } else {
-      console.log("This file is not in the Pentateuch.");
+      console.log("The file is not in any of the directories.");
     }};
