@@ -57,11 +57,7 @@
  
           <p>Hint: Noah's Ark </p>
           
-  <form action="validate.php" method="post">
-  <label for="flag">Flag </label>
-  <input type="text" id="flag" name="flag" required>
-  <button type="submit">Submit Flag</button>
-  <p id="result"></p>
+  <form onsubmit="sendMessage(); return false"><input type="text" id="userInput"/></form>
 </form>
 <!--Simple Substitute Cipher-->
           
@@ -86,6 +82,6 @@
     <p class="name"></p>
   </div>
 
-<script src="FlagResponse.js"></script>
+<script src="EasyScript.js"></script>
   </body>
 </html>
