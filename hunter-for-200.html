@@ -10,12 +10,22 @@
         position: relative;
         width: 500px;
         max-width: 500px;
-        height: 200px;
+        height: 300px;
         margin: 1rem;
         padding: 2rem;
         box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
         border-radius: var(--border-radius);
         background: #ffffff;
+      }
+      .response {
+        position: absolute;
+        top: 300px;
+        left: 305px;
+        font-family: 
+        -apple-system, system-ui,
+        BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue",
+        Arial, sans-serif;
       }
       .block {
         margin-bottom: 20px;
@@ -50,21 +60,19 @@
     </style>
 </head>
 <body>
-    <div class="container">
-      <blockquote class="block">
-        <p class="quote">‟<p>
-        <p>Out of the eater came something to eat,<p>
-        <nobr><p>and out of the strong came something sweet.<p>
-        <p class="end-quote">”<p></p></nobr>
-      </blockquote>
+  <div class="container">
+    <blockquote class="block">
+      <p class="quote">‟<p>
+      <p>Out of the eater came something to eat,<p>
+      <nobr><p>and out of the strong came something sweet.<p>
+      <p class="end-quote">”<p></p></nobr>
+    </blockquote>
 
-        
-        <p style='position: absolute; top: 482px; left: 230px; font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;'>Notation:</p>
-        <div style='position: absolute; text-align: center; top: 500px; left: 305px;';>
-            <form onsubmit="answer(); return false"><input type="text" id="userInput" size="30"><form>
-        </div>
-
+    <div class="response">
+      <p style='top: -18px; left: -75px'>Answer:</p>
+      <form onsubmit="answer(); return false"><input type="text" id="userInput" size="30"><form>
     </div>
+  </div>
     
-    <script src="word-script.js"></script>
+  <script src="word-script.js"></script>
 </body>
