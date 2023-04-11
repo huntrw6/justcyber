@@ -1,6 +1,7 @@
 
 # Welcome to the CTF workshop for the Just Cyber Team
 
-[https://huntrw6.github.io/justcyber/](https://huntrw6.github.io/justcyber/)
+Start here:
 
-[WIP](https://huntrw6.github.io/justcyber/search)
+[https://huntrw6.github.io/justcyber](https://huntrw6.github.io/justcyber/)
+
