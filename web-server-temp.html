@@ -18,22 +18,27 @@
             background-size: cover;
         }
         #button {
-            position: absolute;
-            top: 0px;
-            left: 0;
+            position:absolute;
+            top:0px;
+            left:0;
             background: transparent;
             border: none !important;
-            width: 170px;
-            height: 50px;
-            font-size: 0;
+            width:170px;
+            color:white;
         }
 
     </style>
+    <script>
+        $('#button').click(function () {
+            alert('I am clickable');
+        });
+
+    </script>
 
 </head>
 <body>
-    <p>Transparent Button Here</p>
-    <button href="https://google.com" id="button">Some Button Text</button>
+    <p>Button Here</p>
+    <button id="button">Some Button Text</button>
 
 
 </body>
