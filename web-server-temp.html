@@ -17,28 +17,21 @@
             background: url(./src/admin_email.JPG);
             background-size: cover;
         }
-        #button {
-            position:absolute;
-            top:0px;
-            left:0;
-            background: transparent;
-            border: none !important;
-            width:170px;
-            color:white;
+        button {
+            background:transparent;
+            border:none;
+            outline:none;
+            display:block;
+            height:200px;
+            width:200px;
+            cursor:pointer;
         }
 
     </style>
-    <script>
-        $('#button').click(function () {
-            alert('I am clickable');
-        });
-
-    </script>
 
 </head>
 <body>
-    <p>Button Here</p>
-    <button id="button">Some Button Text</button>
+    <button id="button" href="/images/myw3schoolsimage.jpg" download>Button Text</button>
 
 
 </body>
