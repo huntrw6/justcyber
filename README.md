@@ -18,4 +18,5 @@ Hard: Requires a niche tool or concept to solve
 root: most difficult flag to complete since it consists of multiple steps, and root access to the flag in one way or another. 
 
 
-## Start here: [https://huntrw6.github.io/justcyber](https://huntrw6.github.io/justcyber/)
+## Start here:
+[https://huntrw6.github.io/justcyber](https://huntrw6.github.io/justcyber/)
