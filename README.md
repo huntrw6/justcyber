@@ -3,7 +3,7 @@
 
 ### Final Project
 
-Bethel School of Technology
+### Bethel School of Technology
 CSO110 Group Project - April 2023
 Matthew, Hunter, Jessica
 
