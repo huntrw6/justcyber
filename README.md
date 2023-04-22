@@ -1,6 +1,7 @@
 
 # Welcome to the CTF workshop for the Just Cyber Team
 
+
 ### Bethel School of Technology: 2023 CSO110 Final Group Project - Matthew, Hunter, & Jessica
 
 Capture the Flag (CTF) is a type of game or competition that challenges participants to solve various cyber security challenges and puzzles, with the ultimate goal of capturing a "flag," which is a digital token or key that represents a successful breach or exploit.
